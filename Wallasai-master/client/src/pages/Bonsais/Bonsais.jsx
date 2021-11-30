@@ -4,10 +4,8 @@ import PlantList from '../../components/TreeList/TreeList'
 import "./Bonsais.scss";
 const Bonsais = () => {
     return (
-        <div className="bonsais_content">
+        <div >
             <h1 className="title_Bonsai"></h1>
-            
-           
                <div className="container">
             <BonsaiList/>
             </div>

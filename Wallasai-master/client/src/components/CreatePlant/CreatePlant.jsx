@@ -39,7 +39,7 @@ const CreatePlant = () => {
   return (
       user && (
     <div>
-      <h1> ¡¡¡Wallasea tu anuncio!!!</h1>
+      <h1 > ¡Wallasea tu anuncio!</h1>
       <form onSubmit={submitForm} className="createForm">
       <input class="inputBottom"
           type="text"

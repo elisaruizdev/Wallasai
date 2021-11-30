@@ -21,7 +21,7 @@ const UserPhoto = () => {
         {pictures.map((picture) => {
           return (
             <li key={JSON.stringify(picture)}>
-              <img class="photoUser" src={picture.picture} alt="Picture" width="400px" />
+              <img class="photoUser" src={picture.picture} alt="Picture"  />
             </li>
           );
         })}

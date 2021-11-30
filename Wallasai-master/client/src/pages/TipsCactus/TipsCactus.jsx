@@ -3,13 +3,16 @@ import "./TipsCactus.scss";
  
 const TipsCactus = () => {
   return (
-    <div className="containerCactus">
-      <div className="titleCactus">
-        <h1>¡Cuida tus cactus!</h1>
+    <div class="more-info">
+      <div class="more-info__title">
+        
       </div>
-      <div className="textCactus">
+      <div class="more-info__cards">
+        <div class="more-info__card">
+           
+            <div class="more-info__card-content">
         <h2>
-          1. La luz, uno de los detalles más importantes de cómo cuidar un
+           La luz, uno de los detalles más importantes de cómo cuidar un
           cactus
         </h2>
         <p>
@@ -23,7 +26,14 @@ const TipsCactus = () => {
           Cultivados en exterior, tendremos que tratar de que no reciban sol en
           las horas centrales de mayor incidencia.
         </p>
-        <h2>2. El sustrato, clave para su bienestar</h2>
+        </div>
+        </div>
+        
+       
+        <div class="more-info__card">
+          
+            <div class="more-info__card-content">
+        <h2> El sustrato, clave para su bienestar</h2>
         <p>
           Aunque creamos que el suelo en el que crecen es un asunto menor, nada
           más lejos de la realidad. De hecho, podemos decir que el sustrato es
@@ -36,7 +46,13 @@ const TipsCactus = () => {
           Además de esto, es fundamental proveer a nuestra planta de un buen
           drenaje.
         </p>
-        <h2>3. El riego, moderado y específico</h2>
+        </div>
+        </div>
+        
+        <div class="more-info__card">
+            
+            <div class="more-info__card-content">
+        <h2> El riego, moderado y específico</h2>
         <p>
           El exceso de agua es, precisamente, una de las principales razones que
           acaban con los cactus. Pero ojo: por más que sean plantas resistentes
@@ -49,7 +65,13 @@ const TipsCactus = () => {
           palillo en el suelo. Cuando no haya ni rastro de humedad, es el
           momento de regar.
         </p>
-        <h2>4. La temperatura, otro aspecto crucial</h2>
+        </div>
+        </div>
+        
+        <div class="more-info__card">
+            
+            <div class="more-info__card-content">
+        <h2> La temperatura, otro aspecto crucial</h2>
         <p>
           Aunque son plantas todoterreno, no nos confundamos: no les gusta nada
           el frío. Si bien es cierto que pueden soportar fresco, la mayor parte
@@ -59,7 +81,13 @@ const TipsCactus = () => {
           comprometer la vida de nuestra planta. Y dado que son frioleros, no:
           no toleran las heladas.
         </p>
-        <h2>5. El abono, fundamental para la salud de la planta</h2>
+        </div>
+        </div>
+       
+        <div class="more-info__card">
+            
+            <div class="more-info__card-content">
+        <h2> El abono, fundamental para la salud de la planta</h2>
         <p>
           A pesar de ser plantas rústicas y de la creencia popular, los cactus
           también necesitan un extra. Los sucesivos riegos desgastan el suelo y
@@ -70,19 +98,37 @@ const TipsCactus = () => {
           nuestra planta lo que necesita para crecer: además, estos abonos están
           diseñados para hacer que la planta retenga mejor el agua.
         </p>
-        <h2>6. No lo riegues en época de reposo</h2>
+        </div>
+        </div>
+       
+        <div class="more-info__card">
+           
+            <div class="more-info__card-content">
+        <h2> No lo riegues en época de reposo</h2>
         <p>
           ¡Olvídate de él! Desde el otoño hasta la primavera, tu cactus estará
           en periodo de descanso y, por tanto, no necesitará agua. Respetarlo es
           sinónimo de salud para él.
         </p>
-        <h2>7. Cuando lo riegues, hazlo en condiciones</h2>
+        </div>
+        </div>
+        
+        <div class="more-info__card">
+            
+            <div class="more-info__card-content">
+        <h2> Cuando lo riegues, hazlo en condiciones</h2>
         <p>
           No escatimes con el agua creyendo que va a sentarle mal. Riega en
           profundidad cuando lo hagas, cerciorándote de que tu planta tiene un
           buen drenaje.
         </p>
-        <h2>8. Usa un fungicida con carácter preventivo</h2>
+        </div>
+        </div>
+        
+        <div class="more-info__card">
+           
+            <div class="more-info__card-content">
+        <h2> Usa un fungicida con carácter preventivo</h2>
         <p>
           ¡Clave! Como decíamos antes, los hongos son uno de los principales
           enemigos de los cactus. Y, por ello y por lo difíciles que son de
@@ -91,7 +137,14 @@ const TipsCactus = () => {
           planta de malas compañías sino que, además, ayudará a incrementar sus
           defensas naturales ante este tipo de ataques.
         </p>
-        <h2>9. Alíate con el barro</h2>
+        </div>
+        </div>
+        
+       
+        <div class="more-info__card">
+  
+            <div class="more-info__card-content">
+        <h2> Alíate con el barro</h2>
         <p>
           Solemos preguntarnos cuáles son las mejores macetas para suculentas,
           pero no para cactus. Y sí: ambas coinciden. Las macetas de barro son
@@ -99,14 +152,13 @@ const TipsCactus = () => {
           fantástica de evitar que el exceso de humedad nos juegue una mala
           pasada.
         </p>
-        <h2>10. Cuántos más pinchos, más tolerancia al sol</h2>
-        <p>
-          Un truco para saber su nivel de tolerancia solar, además de conocer
-          sus necesidades, está relacionado con sus pinchos. Cuantos más tenga
-          un cactus, mayor será su capacidad de recibir sol directo.
-        </p>
-      </div>
-    </div>
+        </div>
+        </div>
+        </div>
+       
+        </div>
+    
+    
   );
 };
  
