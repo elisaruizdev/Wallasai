@@ -1,0 +1,51 @@
+.carnivorous_container {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+
+    .carnivorousList {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      width: 100%;
+    
+      :hover {
+        -webkit-transform:scale(1);transform:scale(1.02);
+        } 
+      }
+
+      li {
+        display: flex;
+        justify-content: space-around;
+        margin: 20px;
+        text-decoration: none;
+        align-content: flex-start;
+        width: 25%;
+        margin: 20px;
+        list-style: none;
+        border-color: 10px yellow;
+
+        h2 {
+          border-radius: 8px;
+          font-size: 22px;
+          padding: 3px;
+          padding-top: 10px;
+          color: rgba(19, 17, 17, 0.575);
+        }
+        .price_card {
+          font-size: 18px;
+          margin-bottom: 20px;
+          margin-top: 5px;
+          font-weight: bold;
+        }
+        .img_card {
+          height: 270px;      
+          border-radius: 5px;
+          object-fit: contain;
+          margin-top: 20px;
+          filter: saturate(180%);
+        }
+        
+      }
+    }
+  

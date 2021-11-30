@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;1,700&display=swap');
+body {
+  margin: 0px;
+}
+.navContent {
+    display: flex;
+    flex-direction: column;
+    padding-top: 100px;
+    max-width: 80%;
+    margin:0 auto;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    width: 100%;
+   
+    .navButton {
+      display: flex;
+      padding-top: 50px;
+      border-top: 6px solid black;
+      width: 100%;
+    }
+
+    .buttonLink{
+        display: flex;
+        width: 100%;
+      }
+      
+      .navButton_text{
+        text-decoration: none;
+        font-size: 25px;
+        color:black;
+        text-transform: uppercase;
+        padding-right: 30px; 
+      }
+
+      p:hover {
+        color:#7c9252;
+      }       
+
+      .lupa_img{
+        width: 50px;      
+      }
+  
+   .animated {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    border-radius: 10px;
+    .logo_div{
+      
+      
+    .logo_img{
+      width: 280px;   
+    }
+  }
+  .logo_Divmodal{
+    margin-top: 35px;
+  } 
+}    
+}
+
+.buttonProfile {
+  font-family: 'Roboto', sans-serif;
+  font-size: 12px;
+  margin: 15px;
+  padding:10px;
+  border-radius: 5px;
+  width: 100px;
+  align-items: flex-end;
+  text-transform: uppercase;
+}
+
+.buttonProfile:hover {
+  background-color: rgba(0, 0, 255, 0);
+  color:black;
+  cursor: pointer;
+}
+
+.buttonLogout {
+  font-family: 'Roboto', sans-serif;
+  font-size: 12px;
+  margin: 15px;
+  padding:10px;
+  border-radius: 5px;
+  width: 100px;
+  align-items: flex-end;
+  text-transform: uppercase;
+}
+
+.buttonLogout:hover {
+  background-color: rgba(3, 143, 66, 0);
+  color:black;
+  cursor: pointer;
+}
+  
+
+.hello{
+  font-family: 'Montserrat', sans-serif;
+  font-size: 15px;
+  display:flex;
+  justify-content:center;
+}
+
+

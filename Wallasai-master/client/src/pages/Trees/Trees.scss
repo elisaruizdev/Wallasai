@@ -1,0 +1,20 @@
+@import url('https://fonts.googleapis.com/css2?family=Vidaloka&display=swap%27');
+
+.title_Trees{
+    font-size: 100px;
+    font-family: 'Vidaloka', serif;
+    letter-spacing: 5px;
+    text-align: center;
+    background-image:url( "https://i.imgur.com/SBotMeq.png");
+    height: 720px;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    width: 100%;
+}
+.container{
+ 
+    display: flex;
+    flex-direction: row;
+    justify-content: center;   
+}
+

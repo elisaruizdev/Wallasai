@@ -1,0 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Vidaloka&display=swap%27');
+
+.title_Carnivorous{
+    font-size: 100px;
+    padding:75px;
+    font-family: 'Vidaloka', serif;
+    letter-spacing: 5px;
+    text-align: center;
+    background-image:url( "https://i.imgur.com/Aad3wsO.png");
+    height: 720px;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    margin-bottom: 80px;
+   
+}
+.container{
+ 
+    display: flex;
+    flex-direction: row;
+    justify-content: center;   
+}

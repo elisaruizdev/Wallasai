@@ -1,0 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Vidaloka&display=swap%27');
+
+.title_Bonsai{
+    font-size: 100px;
+    padding:75px;
+    font-family: 'Vidaloka', serif;
+    letter-spacing: 5px;
+    background-image:url( "https://i.imgur.com/QTnIomv.png");
+    height: 720px;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    text-align: center;
+    margin-bottom: 80px;
+}
+
+.container{
+ 
+    display: flex;
+    flex-direction: row;
+    justify-content: center;   
+}

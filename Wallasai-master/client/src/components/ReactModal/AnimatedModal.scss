@@ -1,0 +1,41 @@
+.content_animated {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 100px;
+    border: 0px;
+    font-size: 40px;
+    text-align: center;
+    background: rgb(100, 145, 115);
+    background: linear-gradient(0deg, rgba(100, 145, 115, 1) 0%, rgba(219, 213, 164, 1) 100%);
+    border:2px solid black;
+    .img_login {
+        img {
+            width: 300px;
+            margin-bottom: 50px;
+        }
+    }
+
+    
+    
+    .css-button-rounded--green {
+        margin:10px;
+        min-width: 130px;
+        height: 60px;
+        color: #fff;
+        padding: 5px ;
+        font-weight: bold;
+        cursor: pointer;
+        transition: all 0.3s ease;
+        justify-content: center;
+        outline: none;
+        border-radius: 5px;
+        border: 2px solid #597376;
+        background: #597376;
+        font-size: 20px;
+  }
+  .css-button-rounded--green:hover {
+      background: #fff;
+      color: #597376;
+  }
+    }
