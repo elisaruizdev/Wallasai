@@ -22,7 +22,7 @@ const CarnivorousList = () => {
       <ul className="carnivorousList">
         {carnivorous.map((plant) => {
           return (
-            <li key={JSON.stringify(plant)} >
+            <li key={JSON.stringify(plant)} className="li_carnivorous" >
               <div className="carnivorousList__item">
                 
               <Link to = {`/detail?plantName=${plant.name}`} >

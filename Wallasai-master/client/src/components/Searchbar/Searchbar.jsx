@@ -1,7 +1,7 @@
 import { useState} from "react";
 import axios from "axios";
 import "./Searchbar.scss";
-
+import { Link } from "react-router-dom";
 
 
 const Searchbar = () => {
@@ -49,20 +49,16 @@ const Searchbar = () => {
           {!plantsChosen ? (
             <h1 class="selectChoise"></h1>
           ) : (
-            <>
               <div class="plantContainer">
                 <div class="plantInfoContainer">
-
-                 
+                <Link to = {`/detail?plantName=${plant.name}`} >
                   <img className="plantImgContainer" src={plant.img} alt={plant.name} />
+                  </Link>
                   <h3> {plant.name}</h3>
                   <h4> {plant.price} </h4>
-                 
-
-
                 </div>
               </div>
-            </>
+            
           )
           }
       </div>

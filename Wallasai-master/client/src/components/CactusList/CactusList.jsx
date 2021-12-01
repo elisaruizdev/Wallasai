@@ -22,11 +22,11 @@ const CactusList = () => {
       <ul className="cactusList">
         {cactus.map((plant) => {
           return (
-            <li key={JSON.stringify(plant)} >
+            <li key={JSON.stringify(plant)} className="li_cactus">
               <div className="cactusList__item">
                
               <Link to = {`/detail?plantName=${plant.name}`} >
-                <img className="img_card" src={plant.img} alt={plant.name}/>
+                <img className="img_card_cactus" src={plant.img} alt={plant.name}/>
                 </Link>
                 <h2>{plant.name}</h2>
                 <p className="price_card">{plant.price}</p>

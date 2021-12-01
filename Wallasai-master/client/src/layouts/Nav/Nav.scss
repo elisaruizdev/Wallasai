@@ -15,6 +15,7 @@ body {
     font-family: 'Montserrat', sans-serif;
     font-weight: bold;
     width: 100%;
+    
    
     .navButton {
       display: flex;
@@ -106,3 +107,34 @@ body {
 
 
 
+@media (max-width: 760px) {
+
+  .animated{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .logo_Divmodal{
+      margin-bottom: 15px;
+    }
+    .logo_div{
+      margin-bottom: -40px;
+    }
+  }
+ .navButton{
+ display:flex ;
+ flex-direction: column;
+flex-wrap: wrap;
+align-items: center;
+.buttonLink{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  
+  .navButton_text{
+    margin: 8px;
+  }
+}
+   
+ }
+}

@@ -2,8 +2,8 @@ import "./App.css";
 import React, { useState } from "react";
 import { Route, Switch, BrowserRouter as Router } from "react-router-dom";
 import { Home, Login, Profile, Register, Bonsais, Cactus, CarnivorousPlants, Trees,DetailPlant, TipsArbol, TipsBonsai, TipsCactus } from "./pages";
-import { Nav, Footer } from "./layouts";
-import { AuthRoute, LoginModal,RegisterModal, SearchModal } from "./components";
+import { Nav, Footer, Burger } from "./layouts";
+import { AuthRoute, LoginModal,RegisterModal, SearchModal,Size } from "./components";
 
 export const UserContext = React.createContext(null);
 
@@ -20,7 +20,10 @@ function App() {
       
       <Router>
         <UserContext.Provider value={{ user, saveUser }}>
-          <Nav/>
+      
+          <Size/>
+        
+          
           <Switch>
             <Route exact path="/" component={Home} />
             <Route path="/login" component={Login} />

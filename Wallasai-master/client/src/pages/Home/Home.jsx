@@ -9,22 +9,18 @@ const Home = () => {
     <section>
       {/* <h2 class="titleBlog">Blog</h2> */}
       <div class="presentation">
-
+<div>
+<img  src="https://i.imgur.com/VwHO2Bw.png"></img>
+</div>
         <div className="conten_wallasai">
-
-          <div>
+    <div className="content_wallasai_about">
             <h1 class="titleWhat">¿Qué es Wallasai?</h1>
 
             <h2 className="p_home">Somos la primera plataforma de compra-venta de plantas exóticas. Ponemos en contacto a personas de todo el mundo.
 Vende o intercambia cualquier planta con otros usuarios y cuídalas siguiendo nuestros Wallatips, ¡todas las semanas 3 tips nuevos para que tus plantas luzcan preciosas todo el año!.
             </h2>
-
-          </div>
-          <div>
+</div>
             <img className="banner_home" src="https://greenisawayoflife.files.wordpress.com/2016/01/bonsai-1.gif?w=640&h=360&zoom=2"></img>
-
-          </div>
-
         </div>
 
       </div>

@@ -1,33 +1,26 @@
 .trees_container {
-  width: 100%;
-  display: flex;
+  width: 70%;
+  display:flex;
   flex-wrap: wrap;
 
     .treesList {
-      display: flex;
+      display:flex;
       flex-wrap: wrap;
       justify-content: center;
-      width: 100%;
       
       :hover {
         -webkit-transform:scale(1);transform:scale(1.02);
         } 
     
-      li {
-        display: flex;
-        justify-content: space-around;
-        margin: 20px;
+      .li_tree {
         text-decoration: none;
-        align-content: flex-start;
         width: 25%;
-        margin: 20px;
+      margin: 50px;
         list-style: none;
-        border-color: 10px yellow;
 
         h2 {
           border-radius: 8px;
           font-size: 22px;
-          padding: 3px;
           padding-top: 10px;
           color: rgba(19, 17, 17, 0.575);
         }
@@ -38,15 +31,37 @@
           font-weight: bold;
         }
         .img_card {
-          height: 270px;      
-          border-radius: 5px;
-          object-fit: contain;
-          margin-top: 20px;
-          filter: saturate(180%);
-          
+          height: 270px;
+      width:270px ;
+      border-radius: 5px;
+      object-fit: cover;
+      margin-top: 20px;
+      filter: saturate(180%);
           
         }
         
       }
+    }
+  }
+  @media (max-width: 900px) {
+    .trees_container {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+ 
+     
+    .treesList {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 80%;
+     
+   
+     
+    }
+    .li_tree{
+      width:100%;
+    }
     }
   }

@@ -1,6 +1,7 @@
 import React, { useContext } from "react";
 import { Link } from "react-router-dom";
 import { UserContext } from "../../App";
+import { Burger } from "../../layouts";
 import { AnimatedModal, Searchbar } from "../../components";
 import "./Nav.scss";
 
@@ -33,6 +34,8 @@ const Nav = () => {
       </div>
       <div className="navButton">
         <div className="buttonLink">
+      
+          
           <Link to="/" className="navButton_text" >
             <p > Home</p>
           </Link>
@@ -48,14 +51,15 @@ const Nav = () => {
           <Link to="/carnivorousplants" className="navButton_text">
             <p >Carnívoras</p>
           </Link>
-        </div>
-        <div>
-        <Link to="/searchmodal" className="search" >
+          </div>
+          <Link to="/searchmodal" className="search" >
             <img src="https://i.imgur.com/43FwbeX.png" alt="logolupa" className="lupa_img" />
           </Link>
         </div>
-      </div>
-
+       
+     
+      
+       
       {/*   <>
           {!user ? (
             <Link to="/register">

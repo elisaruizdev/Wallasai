@@ -36,12 +36,16 @@
       padding: 10px;
       text-align:center;
       overflow: hidden;
-      
-      :hover {
-        -webkit-transform:scale(2);transform:scale(1.05);
-        overflow: hidden;
-        margin: 20px;
-        } 
+      .plantImgContainer_media{
+          width:500px;
+          border-radius: 20px;
+          :hover img {
+            -webkit-transform:scale(2);transform:scale(1.05);
+            overflow: hidden;
+            margin: 20px;
+            }
+      }
+     
 
       h1{
         
@@ -68,4 +72,12 @@
 }
 .plantImgContainer{
     border-radius: 20px;
+}
+@media (max-width: 900px) {
+    .more-info__card-content_detail{
+        .plantImgContainer_media{
+        width: 270px;
+        border-radius: 20px;
+        }
+    }
 }

@@ -22,7 +22,7 @@ const TreeList = () => {
       <ul className="treesList">
         {trees.map((plant) => {
           return (
-            <li key={JSON.stringify(plant)} >
+            <li key={JSON.stringify(plant)} className="li_tree">
               <div className="treeList__item">
                
               <Link to = {`/detail?plantName=${plant.name}`} >

@@ -1,0 +1,32 @@
+.container_Burger{
+display: flex;
+flex-direction: row;
+justify-content: space-around;
+padding: 40px;
+border-bottom: 2px solid black;
+
+}
+.lupa_img_Burger{
+    height: 60px;
+    margin-top: 10px;
+}
+.logo_Divmodal{
+    margin-top: 10px;
+}
+.nav_content{
+    display: flex;
+    align-items: center;
+}
+.navButton_text_burger{
+    list-style: none;
+    text-decoration: none;
+    text-align: center;
+    color: black;
+    
+}
+
+
+.hello_burger{
+    color: black;
+    text-align: center;
+}

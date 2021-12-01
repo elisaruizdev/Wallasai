@@ -11,5 +11,5 @@ import PictureForm from "./PictureForm/PictureForm";
 import UserPhoto from "./UserPhoto/UserPhoto";
 import SearchModal from "./ReactModal/SearchModal";
 import CreatePlant from "./CreatePlant/CreatePlant";
-
-export { TreeList, LoginForm, RegisterForm, AuthRoute, AnimatedModal,LoginModal,RegisterModal, ProfileComp, Searchbar, PictureForm, UserPhoto, SearchModal, CreatePlant};
+import Size from "./Size/Size";
+export { TreeList, LoginForm, RegisterForm, AuthRoute, AnimatedModal,LoginModal,RegisterModal, ProfileComp, Searchbar, PictureForm, UserPhoto, SearchModal, CreatePlant,Size};

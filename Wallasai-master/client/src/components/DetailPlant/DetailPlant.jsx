@@ -34,7 +34,7 @@ const DetailPlant = () => {
       <div class="more-info__card_detail">
          
           <div class="more-info__card-content_detail">
-      <img className="plantImgContainer" src={plant.img} alt={plant.name} /> 
+      <img className="plantImgContainer_media" src={plant.img} alt={plant.name} /> 
      <div className="content_text">
       <h1>{plant.name}</h1>
         <p>{plant.price}</p>
