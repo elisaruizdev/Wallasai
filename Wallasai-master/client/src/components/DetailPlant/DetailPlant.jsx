@@ -1,66 +1,51 @@
-import "./DetailPlant.scss"
-
-import { useState } from "react";
+import "./DetailPlant.scss";
+import { useState, useEffect } from "react";
+import { useLocation } from "react-router-dom";
 import axios from "axios";
-
-
+ 
 const DetailPlant = () => {
-    const [plantName, setPlantsName] = useState([]);
-    const [plant, setPlant] = useState({
-        name: "",
-        img: "",
-        price: "",
-        description: "",
-    });
-    const searchname = () => {
-      setPlantsName()
-    }
-
+  const [plant, setPlant] = useState({});
+  const query = new URLSearchParams(useLocation().search);
+  const name = query.get("plantName");
+  console.log(query,"query");
+  console.log(name,"queryName");
+  useEffect(() => {
     const searchPlants = () => {
-        axios.get('http://localhost:4000/plants/:plantName').then(
-            (res) => {
-
-                setPlant({
-                    name: res.data.data.plants.name,
-                    img: res.data.data.plants.img,
-                    price: res.data.data.plants.price,
-                    description: res.data.data.plants.description,
-                });
-            }
-        );
+      axios.get(`http://localhost:4000/plants/${name}`).then(
+        (res) => {
+          setPlant({
+            name: res.data.data.plants.name,
+            img: res.data.data.plants.img,
+            price: res.data.data.plants.price,
+            description: res.data.data.plants.description,
+          });
+ 
+ 
+        }
+      );
     };
-   /*  const plantName = plant.filter(plants => plants === plants.name) */
-    
-    searchPlants()
-
-    return (
-      <ul className="bonsaiList">
-        {plantName.map((plant) => {
-          return (
-
-            <li key={JSON.stringify(plant)} >
-              <div className="bonsaiList__item">
-                <h2>{plant.name}</h2>
-                <img className="img_card" src={plant.img} alt={plant.name} />
-                <p className="price_card"> Precio: {plant.price} €</p>
-              </div>
-            </li>
-
-          );
-        })}
-      </ul>
-
-    );
-
-}
-
+    searchPlants();
+  }, []);
+  return (
+ 
+    <div class="more-info">
+   
+    <div class="more-info__cards_detail">
+      <div class="more-info__card_detail">
+         
+          <div class="more-info__card-content_detail">
+      <img className="plantImgContainer" src={plant.img} alt={plant.name} /> 
+     <div className="content_text">
+      <h1>{plant.name}</h1>
+        <p>{plant.price}</p>
+        
+        <p>{plant.description}</p>  
+        </div>
+        </div>
+      </div>
+ </div>
+ </div>
+  );
+};
+ 
 export default DetailPlant;
-
-        //<div>
-            //<div class="plantInfoContainer">
-                //<h3> {plant.name}</h3>
-                //<img className="plantImgContainer" src={plant.img} alt={plant.name} />
-                //<h4>Precio: {plant.price}</h4>
-                //<h4>Descripción: {plant.description}</h4>
-            //</div>
-        //</div>

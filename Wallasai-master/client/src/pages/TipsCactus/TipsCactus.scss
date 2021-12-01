@@ -7,25 +7,25 @@
   max-width: 80%;
   margin: 0 auto;
   
+  
+  
+  
   &__title{
     background-image:url( "https://images-ext-1.discordapp.net/external/fVq090V_ELgF7pPhaw0I4Vc0D-G57Ex6qiM_mvBczV0/https/i.imgur.com/6OobKKj.png?width=1440&height=560");
     height: 43vw;
     background-repeat: no-repeat;
     background-size: 100%;
     
+    
   }
   &__cards{
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* todas las columnas en menos de 260 px*/
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); /* todas las columnas en menos de 260 px*/
       grid-gap: 2rem;
       
       
       padding-bottom: 40px;
      
-      :hover {
-        -webkit-transform:scale(1);transform:scale(1.05);
-        } 
-      
       
   }
   &__card{
@@ -35,49 +35,48 @@
       flex-direction: column;
       box-shadow: 3px 5px 15px 5px rgba(187,187,187,0.69);
       background-color: rgba(222, 184, 135, 0.089);
-  }
-  &__card-img{
-      width: 100%;
-      height: 40%;
-      /* &--1{
-          @include background-image('../assets/card_1.jpeg', cover, center, no-repeat);
-
-      }
-      &--2{
-          @include background-image('../assets/card_2.jpeg', cover, bottom, no-repeat);
-
-      }
       
-      &--3{
-          @include background-image('../assets/card_3.jpeg', cover, bottom, no-repeat);
-
-      } */
       
-     
-     
-  
-
+      
   }
+ 
   &__card-content{
       padding: 10px;
       text-align:justify;
       overflow: hidden;
+      :hover {
+        -webkit-transform:scale(2);transform:scale(1.05);
+        overflow: hidden;
+        margin: 20px;
+        } 
 
       h2{
         
           color: #7c9252;
           font-weight: bold;
-          font-size: 20px;
+          font-size: 25px;
           font-family: 'Montserrat';
           margin: 10px;
+          text-align: center;
+      }
+
+      h3{
+        color: #7c9252ab;
+        font-weight: bold;
+        font-size: 20px;
+        font-family: 'Montserrat';
+        margin: 15px;
+        text-align: center;
+
       }
       p{
           padding-top: 15px;
           color: #b3afaf;
           font-weight: normal;
-          font-size:22px;
+          font-size:20px;
           margin: 10px;
           word-spacing: 0px;
+          overflow: hidden;
       }
   }
 }

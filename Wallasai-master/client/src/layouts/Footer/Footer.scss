@@ -1,8 +1,20 @@
 .styleFooter{
     display: flex;
-    justify-content: center;
-    height: 100px;
+    justify-content:space-around;
+ 
+   width: 100%;
+    height: 110px;
     color: whitesmoke;
     background-color: black;
     align-items: center;
+   
+    .git_hub{
+       width: 40px;
+       color: whitesmoke;
+       padding: 8px;
+    }
+    .icono_git{
+        text-align: center;
+        
+    }
 }

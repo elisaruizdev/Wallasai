@@ -8,6 +8,9 @@ const Profile = () => {
   const { user } = useContext(UserContext);
   return (
     <div className="profile">
+     <div className="profile_create">
+        <CreatePlant />
+      </div>
       <div class="profile_interface">
       <h2 className="title_profile">Mi perfil</h2>
       <UserPhoto />
@@ -18,9 +21,7 @@ const Profile = () => {
         <PictureForm />
         </ul>
         </div>
-      <div className="profile_create">
-        <CreatePlant />
-      </div>
+     
       </div>
 
   );

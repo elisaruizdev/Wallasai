@@ -3,11 +3,14 @@ import "./TipsArbol.scss";
  
 const TipsArbol = () => {
   return (
-    <div className="containerArbol">
-      <div className="titleArbol">
-        <h1>Tips de Riego</h1>
+    <div class="more-info_arbol">
+      <div class="more-info_arbol__title">
+      
       </div>
-      <div className="textArbol">
+      <div class="more-info_arbol__cards">
+        <div class="more-info_arbol__card">
+           
+            <div class="more-info_arbol__card-content">
         <h2>A qué hora regar tu árbol</h2>
         <p>
           Durante una tarde típicamente calurosa, se puede perder hasta la mitad
@@ -24,6 +27,9 @@ const TipsArbol = () => {
           profundidad de dos pulgadas (5 cm). Si el suelo está seco al tacto, tu
           árbol necesita agua.
         </p>
+        
+       
+
         <h2>La cantidad de agua</h2>
         <p>
           Para árboles bien establecidos, la regla es generalmente 10 galones de
@@ -44,6 +50,13 @@ const TipsArbol = () => {
           dosel del árbol y a una profundidad de 10 pulgadas (25 cm) si es
           posible.
         </p>
+        </div>
+        </div>
+
+        
+        <div class="more-info_arbol__card">
+          
+          <div class="more-info_arbol__card-content">
         <h2>La consistencia es clave</h2>
         <p>
           Permitir que el suelo se seque por completo, o dejar que se empape,
@@ -59,7 +72,9 @@ const TipsArbol = () => {
           que también lo ayudarán a conservar el agua. Recuerda que puedes usar
           la Urna Bios® con el árbol que quieras.
         </p>
+        </div>
       </div>
+    </div>
     </div>
   );
 };

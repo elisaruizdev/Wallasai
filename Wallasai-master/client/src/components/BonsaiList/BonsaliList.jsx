@@ -26,7 +26,7 @@ const BonsaiList = () => {
             
               <div >
               <div className="bonsaiList__item">
-                <Link to ="/detail" >
+              <Link to = {`/detail?plantName=${plant.name}`} >
                 <img className="img_card" src={plant.img} alt={plant.name} />
                 </Link>
                 <h2>{plant.name}</h2>

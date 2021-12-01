@@ -1,31 +1,85 @@
 @import url('https://fonts.googleapis.com/css2?family=Vidaloka&display=swap%27%27');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;1,700&display=swap%27');
  
-.containerArbol {
-  display: flex;
-  flex-direction: column;
-}
-.titleArbol {
-  text-align: center;
-  margin-bottom: 40px;
-}
-.textArbol {
+@import url('https://fonts.googleapis.com/css2?family=Vidaloka&display=swap%27%27');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;1,700&display=swap%27');
  
-  background-repeat: no-repeat;
-  background-size: 100%;
-  h2 {
-    color: black;
-    font-weight: bold;
-    text-align: center;
-    justify-content: center;
-    margin: 12px;
+.more-info_arbol{
+  padding-top: 80px;
+  padding-bottom: 80px;
+  max-width: 80%;
+  margin: 0 auto;
+  
+  
+  
+  
+  &__title{
+    background-image:url( "https://images-ext-1.discordapp.net/external/5rfbXYgmXu9n1P6VUXq_LZGy09edvidasAS0WdIeOYY/https/i.imgur.com/zb6KgOR.png?width=1440&height=561");
+    height: 43vw;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    
+    
   }
-  p {
-    background-color: rgba(0, 0, 255, 0.021);
-    color: black;
-    font-weight: bold;
-    font-size: large;
-    font-family: vidaloka;
-    margin: 22px;
+  &__cards{
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); /* todas las columnas en menos de 260 px*/
+      grid-gap: 2rem;
+      
+      
+      padding-bottom: 40px;
+     
+      
+  }
+  &__card{
+      
+    
+      display: flex;
+      flex-direction: column;
+      box-shadow: 3px 5px 15px 5px rgba(187,187,187,0.69);
+      background-color: rgba(222, 184, 135, 0.089);
+      
+      
+      
+  }
+ 
+  &__card-content{
+      padding: 10px;
+      text-align:justify;
+      overflow: hidden;
+      :hover {
+        -webkit-transform:scale(2);transform:scale(1.05);
+        overflow: hidden;
+        margin: 20px;
+        } 
+
+      h2{
+        
+          color: #7c9252;
+          font-weight: bold;
+          font-size: 25px;
+          font-family: 'Montserrat';
+          margin: 10px;
+          text-align: center;
+      }
+
+      h3{
+        color: #7c9252ab;
+        font-weight: bold;
+        font-size: 20px;
+        font-family: 'Montserrat';
+        margin: 15px;
+        text-align: center;
+
+      }
+      p{
+          padding-top: 15px;
+          color: #b3afaf;
+          font-weight: normal;
+          font-size:20px;
+          margin: 10px;
+          word-spacing: 0px;
+          overflow: hidden;
+      }
   }
 }
