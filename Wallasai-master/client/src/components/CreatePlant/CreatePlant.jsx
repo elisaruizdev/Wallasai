@@ -93,7 +93,7 @@ const CreatePlant = () => {
           <option value={createForm.specie}>Árboles</option>
         </select> */}
 
-        <button class="css-button-arrow--green" onClick={() => window.location.href="/profile"} type="submit">Crear Producto</button>
+        <button class="css-button-arrow--green"  type="submit">Crear Producto</button>
         {error && <div style={{ color: "red" }}>{error}</div>}
       </form>
     </div>

@@ -3,14 +3,16 @@ import "./TipsCactus.scss";
  
 const TipsCactus = () => {
   return (
-    <div class="more-info">
-      <div class="more-info__title">
+    <div>
+    <div class="more-info_cactus__title">
         
-      </div>
-      <div class="more-info__cards">
-        <div class="more-info__card">
+    </div>
+    <div class="more-info_cactus">
+   
+      <div class="more-info_cactus__cards">
+        <div class="more-info_cactus__card">
            
-            <div class="more-info__card-content">
+            <div class="more-info_cactus__card-content">
         <h2>
            La luz, uno de los detalles más importantes de cómo cuidar un
           cactus
@@ -30,9 +32,9 @@ const TipsCactus = () => {
         </div>
         
        
-        <div class="more-info__card">
+        <div class="more-info_cactus__card">
           
-            <div class="more-info__card-content">
+            <div class="more-info_cactus__card-content">
         <h2> El sustrato, clave para su bienestar</h2>
         <p>
           Aunque creamos que el suelo en el que crecen es un asunto menor, nada
@@ -49,9 +51,9 @@ const TipsCactus = () => {
         </div>
         </div>
         
-        <div class="more-info__card">
+        <div class="more-info_cactus__card">
             
-            <div class="more-info__card-content">
+            <div class="more-info_cactus__card-content">
         <h2> El riego, moderado y específico</h2>
         <p>
           El exceso de agua es, precisamente, una de las principales razones que
@@ -68,9 +70,9 @@ const TipsCactus = () => {
         </div>
         </div>
         
-        <div class="more-info__card">
+        <div class="more-info_cactus__card">
             
-            <div class="more-info__card-content">
+            <div class="more-info_cactus__card-content">
         <h2> La temperatura, otro aspecto crucial</h2>
         <p>
           Aunque son plantas todoterreno, no nos confundamos: no les gusta nada
@@ -84,9 +86,9 @@ const TipsCactus = () => {
         </div>
         </div>
        
-        <div class="more-info__card">
+        <div class="more-info_cactus__card">
             
-            <div class="more-info__card-content">
+            <div class="more-info_cactus__card-content">
         <h2> El abono, fundamental para la salud de la planta</h2>
         <p>
           A pesar de ser plantas rústicas y de la creencia popular, los cactus
@@ -101,9 +103,9 @@ const TipsCactus = () => {
         </div>
         </div>
        
-        <div class="more-info__card">
+        <div class="more-info_cactus__card">
            
-            <div class="more-info__card-content">
+            <div class="more-info_cactus__card-content">
         <h2> No lo riegues en época de reposo</h2>
         <p>
           ¡Olvídate de él! Desde el otoño hasta la primavera, tu cactus estará
@@ -113,9 +115,9 @@ const TipsCactus = () => {
         </div>
         </div>
         
-        <div class="more-info__card">
+        <div class="more-info_cactus__card">
             
-            <div class="more-info__card-content">
+            <div class="more-info_cactus__card-content">
         <h2> Cuando lo riegues, hazlo en condiciones</h2>
         <p>
           No escatimes con el agua creyendo que va a sentarle mal. Riega en
@@ -125,9 +127,9 @@ const TipsCactus = () => {
         </div>
         </div>
         
-        <div class="more-info__card">
+        <div class="more-info_cactus__card">
            
-            <div class="more-info__card-content">
+            <div class="more-info_cactus__card-content">
         <h2> Usa un fungicida con carácter preventivo</h2>
         <p>
           ¡Clave! Como decíamos antes, los hongos son uno de los principales
@@ -141,9 +143,9 @@ const TipsCactus = () => {
         </div>
         
        
-        <div class="more-info__card">
+        <div class="more-info_cactus__card">
   
-            <div class="more-info__card-content">
+            <div class="more-info_cactus__card-content">
         <h2> Alíate con el barro</h2>
         <p>
           Solemos preguntarnos cuáles son las mejores macetas para suculentas,
@@ -157,7 +159,7 @@ const TipsCactus = () => {
         </div>
        
         </div>
-    
+        </div>
     
   );
 };

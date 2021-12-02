@@ -3,10 +3,12 @@ import "./TipsBonsai.scss";
 
 const TipsBonsai = () => {
   return (
-    <div class="more-info_bonsai">
-      <div class="more-info_bonsai__title">
+    <div>
+    <div class="more-info_bonsai__title">
        
-      </div>
+    </div>
+    <div class="more-info_bonsai">
+     
       <div class="more-info_bonsai__cards">
         <div class="more-info_bonsai__card">
 
@@ -159,7 +161,7 @@ const TipsBonsai = () => {
 
       </div>
     </div>
-    
+    </div>
   );
 };
 

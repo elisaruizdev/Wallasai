@@ -6,12 +6,12 @@ const getPlants = async () => {
     "Content-Type": "application/json",
     "Access-Control-Allow-Origin": "",
   };
-
+ 
   const token = localStorage.getItem("token");
   const tokenParsed = token.replaceAll('"', "");
-
+ 
   headers.Authorization = `Bearer ${tokenParsed}`;
-
+ 
   const plants = await fetch(GET_PLANTS, {
     method: "GET",
     credentials: "include",
@@ -22,12 +22,17 @@ const getPlants = async () => {
   return resPlants;
 };
 export const createPlant = async (form) => {
+ 
   const headers = {
     Accept: "application/json",
     "Content-Type": "application/json",
     "Access-Control-Allow-Origin": "",
   };
-
+  const token = localStorage.getItem("token");
+  const tokenParsed = token.replaceAll('"', "");
+ 
+  headers.Authorization = `Bearer ${tokenParsed}`;
+ 
   const plants = await fetch(CREATE_PLANT, {
     method: "POST",
     credentials: "include",
@@ -40,11 +45,11 @@ export const createPlant = async (form) => {
   localStorage.setItem("specie", JSON.stringify(resPlants.data.specie));
   localStorage.setItem("price", JSON.stringify(resPlants.data.price));
   localStorage.setItem("description", JSON.stringify(resPlants.data.description));
-
+ 
   if (!plants.ok) {
     throw new Error("No se ha podido crear planta", resPlants.message);
   }
   return resPlants;
 };
-
+ 
 export default getPlants;

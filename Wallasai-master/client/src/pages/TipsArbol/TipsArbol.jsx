@@ -3,10 +3,12 @@ import "./TipsArbol.scss";
  
 const TipsArbol = () => {
   return (
-    <div class="more-info_arbol">
-      <div class="more-info_arbol__title">
+    <div>
+    <div class="more-info_arbol__title">
       
       </div>
+    <div class="more-info_arbol">
+      
       <div class="more-info_arbol__cards">
         <div class="more-info_arbol__card">
            
@@ -74,6 +76,7 @@ const TipsArbol = () => {
         </p>
         </div>
       </div>
+    </div>
     </div>
     </div>
   );

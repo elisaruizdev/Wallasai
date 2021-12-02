@@ -7,6 +7,9 @@ section {
   .presentation{
     padding-top: 50px;
   }
+  .banner_home_index{
+    width: 100vh;
+  }
   .banner_home {
     width: 80vh;
   }
@@ -205,9 +208,14 @@ section {
 }
 
 @media (max-width: 700px) {
+  .banner_home_index{
+    width:100%;
+    
+  }
   section {
     margin: 0px;
     padding: 0px;
+    
   
   .conten_wallasai {
     
@@ -219,6 +227,8 @@ section {
     padding: 0px;
     
   }
+  
+ 
   .p_home{
    margin:0 30 0 30px;
   }

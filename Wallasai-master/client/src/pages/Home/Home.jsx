@@ -4,14 +4,14 @@ import { Link } from "react-router-dom";
 const Home = () => {
 
   return (
-
-
+<div>
+<div  >
+<img className="banner_home_index" src="https://i.imgur.com/VwHO2Bw.png"></img>
+</div>
     <section>
       {/* <h2 class="titleBlog">Blog</h2> */}
       <div class="presentation">
-<div>
-<img  src="https://i.imgur.com/VwHO2Bw.png"></img>
-</div>
+
         <div className="conten_wallasai">
     <div className="content_wallasai_about">
             <h1 class="titleWhat">¿Qué es Wallasai?</h1>
@@ -79,6 +79,7 @@ Vende o intercambia cualquier planta con otros usuarios y cuídalas siguiendo nu
 
       </div>
     </section>
+    </div>
   );
 };
 

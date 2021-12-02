@@ -1,17 +1,17 @@
-import { REGISTER_USER, LOGIN_USER, } from "./fetch_routes";
-
+import { REGISTER_USER, LOGIN_USER,LOGOUT_USER } from "./fetch_routes";
+ 
 let token = localStorage.getItem("token");
 let bearer = null;
-
+ 
 bearer = `bearer ${JSON.parse(localStorage.getItem("token"))}`;
-
+ 
 const headers = {
   Accept: "application/json",
   "Content-Type": "application/json",
   "Access-Control-Allow-Origin": "*",
   Authorization: bearer,
 };
-
+ 
 export const loginUser = async (form) => {
   const loginFetch = await fetch(LOGIN_USER, {
     method: "POST",
@@ -27,7 +27,7 @@ export const loginUser = async (form) => {
   }
   return res;
 };
-
+ 
 export const registerUser = async (form) => {
   const registerFetch = await fetch(REGISTER_USER, {
     method: "POST",
@@ -45,3 +45,19 @@ export const registerUser = async (form) => {
   }
   return res;
 };
+ 
+export const logout = async() => {
+  const logoutFetch = await fetch(LOGOUT_USER,{
+    method: "POST",
+    credentials: "include",
+    headers: {
+      Accept: "application/json",
+      "Content-Type": "application/json",
+      "Access-Control-Allow-Origin": "*",
+    },
+  });
+  const res = await logoutFetch.json();
+  window.location.replace("/")
+  return res
+}
+ 
